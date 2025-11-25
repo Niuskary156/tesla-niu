@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niuskary Salazar | Tesla-Inspired Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Banner -->
+  <header id="home">
+    <h1>Niuskary Salazar</h1>
+    <p>Web Development Student | Inspired by Tesla’s Innovation</p>
+  </header>
+
+  <!-- Auto Image Slider -->
+  <section class="slider">
+    <div class="slides">
+  <div class="slide">
+    <img src="OIF.jpg" alt="Project Showcase">
+    <div class="caption">Innovative Web Projects</div>
+  </div>
+  <div class="slide">
+    <img src="tesla-5937063_1280.png" alt="Coding Session">
+    <div class="caption">Hands-on Development</div>
+  </div>
+  <div class="slide">
+    <img src="download.jpg" alt="Accessibility Design">
+    <div class="caption">Accessible Inclusive Design</div>
+  </div>
+  <div class="slide">
+    <img src="OIF (1).jpg" alt="Future Vision">
+    <div class="caption">Inspired by Tesla’s Futuristic Vision</div>
+  </div>
+</div>
+	 <!-- Controls -->
+  <button class="prev" onclick="prevSlide()">&#10094;</button>
+  <button class="next" onclick="nextSlide()">&#10095;</button>
+</section>
+
+  <!-- Quick Navigation -->
+  <nav class="quick-nav">
+    <a href="index.html">Projects</a>
+    <a href="skill.html">Skills</a>
+    <a href="mpg.html">MPG Calculator</a>
+    <a href="conctact.html">Contact</a>
+  </nav>
+
+  <!-- MPG Calculator Section -->
+  <section id="mpg" class="calculator">
+    <h2>MPG Calculator</h2>
+    <p>Calculate your vehicle’s fuel efficiency.</p>
+    <form onsubmit="calculateMPG(event)">
+      <label for="miles">Miles Driven:</label>
+      <input type="number" id="miles" required>
+
+      <label for="gallons">Gallons Used:</label>
+      <input type="number" id="gallons" required>
+
+      <button type="submit">Calculate MPG</button>
+    </form>
+    <div id="mpg-result"></div>
+  </section>
+
+  <script src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f9;
+  text-align: center;
+}
+
+/* Hero Banner */
+header {
+  background: #000;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #e0e0e0;
+}
+
+/* Quick Navigation */
+.quick-nav {
+  background: #f4f4f9;
+  padding: 1rem;
+  text-align: center;
+}
+
+.quick-nav a {
+  color: #000;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.quick-nav a:hover {
+  color: #e82127; /* Tesla red accent */
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 900px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* MPG Calculator */
+.calculator {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.calculator h2 {
+  text-align: center;
+  color: #e82127;
+}
+
+.calculator label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.calculator button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background: #e82127;
+}
+
+#mpg-result {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.skills {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.skills h2 {
+  color: #e82127; /* Tesla red accent */
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card i {
+  font-size: 2rem;
+  color: #e82127;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+.contact {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #e82127; /* Tesla red accent */
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #e82127;
+}
+
+#contact-result {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.contact-info {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contact-info a {
+  color: #e82127;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
